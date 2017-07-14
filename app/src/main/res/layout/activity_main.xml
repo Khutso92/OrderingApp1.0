@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:background="#cfd8dc"
+    android:orientation="vertical"
+    tools:context="com.example.khutsomatlala.orderingapp10.MainActivity">
+
+    <!--app name-->
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="KhuBenTso  "
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+
+
+    <!--slogan of the app-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your guide to a perfect cup"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <!--first part four coffee buttons-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.81"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:drawableTop="@drawable/piccolo_main"
+                    android:onClick="GoToPrice"
+                    android:text="piccolo" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:drawableTop="@drawable/short_black"
+                    android:onClick="GoToPrice"
+                    android:text="short black" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:drawableTop="@drawable/flate_white_main"
+                    android:onClick="GoToPrice"
+                    android:text="Flat White" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:drawableTop="@drawable/latte_main"
+                    android:onClick="GoToPrice"
+                    android:text="Café Latte" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--coffee quotes and share buttons-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="  Want to tell your friends about  KhuBen ?"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/imageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="ViewQuotes"
+                android:text="cofffe quotes " />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="shareApp"
+                android:text=" SHARE APP" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
